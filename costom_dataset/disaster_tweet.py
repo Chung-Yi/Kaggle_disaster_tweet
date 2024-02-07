@@ -8,7 +8,7 @@ from datasets import load_dataset
 # class DisasterDataset(Dataset):
 class DisasterDataset:
     def __init__(self, config, device):
-        self.tokenizer = BertTokenizer.from_pretrained('bert-large-uncased', do_lower_case=True)
+        self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
         self.dataset = load_dataset('csv', data_files={config['data_loader']['train_file_path']})['train']
         self.device = device
 
