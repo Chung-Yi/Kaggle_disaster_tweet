@@ -3,8 +3,6 @@ import pandas as pd
 from torch.utils.data import DataLoader
 from torch.utils.data.sampler import SubsetRandomSampler
 
-
-
 class BaseDataLoader(DataLoader):
     def __init__(self, dataset, batch_size, split_weight, num_workers):
         self.n_samples = len(dataset)
