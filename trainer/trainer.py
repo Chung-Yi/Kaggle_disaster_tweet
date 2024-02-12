@@ -66,9 +66,9 @@ class Trainer:
                 self.model.zero_grad()
                 
 
-                print("---------------")
+                # print("---------------")
                 loss = output[0]
-                print(loss.shape)
+                # print(loss.shape)
                 # print(loss)
 
                
